@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>멋사 두번째 세션</title>
+</head>
+<body>
+    <form action="/submit" method="POST">
+        <label for="">아이디 입력:</label>
+        <input type="text" name="username" id="username" placeholder="아이디 입력">
+        <br/>
+        <label for="">비밀번호 입력:</label>
+        <input type="password" name="password" id="password" placeholder="바밀번호 입력">
+        <br/>
+        <label for="">이메일 입력:</label>
+        <input type="email" name="email" id="email" placeholder="이메일 입력">
+        <label for="">선택</label>
+        
+        <select name="rol" id="">
+        
+            <option value="frontend">프론트엔드</option>
+            <option value="" selected disabled>역할을 선택하세요</option>
+            <option value="backend">백엔드</option>
+            <option value="design">디자인</option>
+        </select>
+    </form>
+
+    <label for="">자기소개</label>
+    <textarea name="" id="" rows="4" cols="50"></textarea>
+    <br />
+    <label for="swimming">취미: <input type="checkbox" id="swimming"/> 수영</label>
+    <label for="">취미: <input type="checkbox"/> 야구</label>
+    <br>
+    <input type="submit" value="전송하기" />
+    <input type="reset" value="초기화하기" />
+</body>
+</html>

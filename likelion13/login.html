@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="/submit" method="POST">
+      <label for="username">아이디 입력:</label>
+      <input
+        type="text"
+        name="username"
+        id="username"
+        placeholder="아이디 입력"
+        maxlength="15" required
+      />
+      <br />
+      <label for="password">비밀번호 입력:</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="8자 이상 입력" minlength="8" required />
+      <br />
+      <label for="password">이메일 입력:</label>
+      <input type="email" name="email" id="email" placeholder="example@example.com" required />
+      <br />
+      <label for="">선택:</label>
+      <select name="rol" id="">
+        <option value="" selected disabled>역할을 선택하세요</option>
+
+        <option value="frontend">프론트엔드</option>
+        <option value="backend">백엔드</option>
+        <option value="design">디자인</option>
+      </select>
+    </form>
+
+    <label for="">자기소개:</label>
+    <textarea name="" id="" rows="4" cols="50"></textarea>
+    <br />
+    <label for="swimming"
+      >취미: <input type="checkbox" id="festival" />페스티벌</label
+    >
+    <label for=""><input type="checkbox" id="baseball" />야구</label>
+    <br />
+    <div class="buttons">
+        <input type="submit" value="전송하기" />
+        <input type="reset" value="초기화하기" />
+    </div>
+  </body>
+</html>
