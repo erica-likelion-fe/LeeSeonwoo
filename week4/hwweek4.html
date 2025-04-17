@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>숫자 맞추기 게임</title>
+  <script src="hww4.js" defer></script>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #222;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    input[type="text"] {
+      padding: 5px;
+    }
+    button {
+      padding: 5px 10px;
+    }
+    .result {
+      margin-top: 10px;
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+  <h1>숫자 맞추기 게임</h1>
+  <p>1부터 100 사이의 숫자를 맞춰보세요!</p>
+  <input type="text" id="guessInput" placeholder="숫자 입력" />
+  <button id="submitBtn">확인</button>
+  <p>남은 기회: <span id="chances">10</span></p>
+  <div class="result" id="resultText"></div>
+</body>
+</html>
